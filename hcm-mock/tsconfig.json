@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2018",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    // "ignoreDeprecations": "6.0",          // <--- added to silence baseUrl deprecation warning
+    "types": ["node", "jest"]             // <--- ensure jest globals (describe/it/etc.) are recognized
+  },
+  "include": ["src/**/*", "test/**/*"]
+}
